@@ -34,22 +34,18 @@ p {
 
 /*Aqui comento el cuerpo */
 body {
-  background-color: rgb(0, 0, 0);
+  background: linear-gradient(to top, #4fb576 0%, #44c489 30%, #28a9ae 46%, #28a2b7 59%, #4c7788 71%, #6c4f63 86%, #432c39 100%);
   text-align: justify;
   display: block;
-  text-align: center;
-
+  text-align: center;  
   margin: auto;
 }
 
 /*Aqui comento mis FOOTERS */
 footer {
-  background-color: rgb(0, 0, 0);
-  color: white;
   text-align: justify;
   display: block;
   text-align: right;
-
   margin: auto;
 }
 
@@ -75,8 +71,8 @@ li {
 }
 
 .menu li:hover {
- 
- /* display: inline-block;
+
+  /* display: inline-block;
   text-align: center;*/
 
   font-size: 1.3rem;
@@ -95,7 +91,7 @@ li {
 
 img {
   width: 380px;
-  
+
 }
 
 .foto1 {
@@ -181,12 +177,13 @@ html {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-  
+
     grid-template-areas:
       "articulo1"
       "articulo2"
       "articulo3"
-      "articulo4"}
+      "articulo4"
+  }
 
   .articulo1 {
     display: flex;
@@ -253,7 +250,7 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100vw; 
+    width: 100vw;
   }
 }
 
@@ -341,7 +338,7 @@ header {
 
 .contenedor-ofertas {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-around;  
   flex-wrap: wrap;
   background-color: rgba(3, 4, 3, 0.886);
 }
