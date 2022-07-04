@@ -382,3 +382,7 @@ form {
       border-radius: 30px;
       border-color: rgba(165, 22, 204, 0.855);
     }
+
+    .carousel-item {
+      width: 300px;
+    }
