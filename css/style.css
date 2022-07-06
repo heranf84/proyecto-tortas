@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-/*Aqui comento mis TITULOS */
 h1 {
   font-style: italic;
   color: rgb(201, 19, 207);
@@ -13,17 +12,14 @@ h1 {
   text-align: center;
 }
 
-/*Aqui comento mis subtitulos */
 h2 {
   font-style: initial;
   color: rgb(171, 216, 119);
   font-weight: 100;
   font-size: 2rem;
   text-align: center;
-
 }
 
-/*Aqui comento mis Parrafos */
 p {
   color: white;
   text-align: justify;
@@ -32,24 +28,6 @@ p {
   text-align: center;
 }
 
-/*Aqui comento el cuerpo */
-body {
-  background: linear-gradient(to top, #4fb576 0%, #44c489 30%, #28a9ae 46%, #28a2b7 59%, #4c7788 71%, #6c4f63 86%, #432c39 100%);
-  text-align: justify;
-  display: block;
-  text-align: center;  
-  margin: auto;
-}
-
-/*Aqui comento mis FOOTERS */
-footer {
-  text-align: justify;
-  display: block;
-  text-align: right;
-  margin: auto;
-}
-
-/*Aqui comento UL y LI */
 ul {
   list-style-type: square;
   text-align: center;
@@ -64,17 +42,7 @@ li {
   font: bold 1.5rem verdana;
 }
 
-.tablas {
-  color: white;
-  margin: auto;
-
-}
-
 .menu li:hover {
-
-  /* display: inline-block;
-  text-align: center;*/
-
   font-size: 1.3rem;
   border: solid 1.5px rgba(0, 0, 0, 0.859);
   border-radius: 20px;
@@ -85,20 +53,58 @@ li {
   text-decoration: none;
 }
 
+.Whatsapp {
+  position: fixed;
+  bottom: 4%;
+  right: 4%;
+}
+
+.nav__flex li:hover {
+  font-size: 1.5rem;
+  border: solid 1.5px rgba(0, 0, 0, 0.859);
+  border-radius: 20px;
+  background-color: rgba(42, 204, 60, 0.766);
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 720px) {
+  .menu {
+    display: block;
+    text-align: center;
+  }
+}
+body {
+  background: linear-gradient(to top, #4fb576 0%, #44c489 30%, #28a9ae 46%, #28a2b7 59%, #4c7788 71%, #6c4f63 86%, #432c39 100%);
+  text-align: justify;
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+
+footer {
+  text-align: justify;
+  display: block;
+  text-align: right;
+  margin: auto;
+}
+
 .seccion {
   padding: 3rem;
 }
 
+html {
+  margin-top: 30px;
+}
+
 img {
   width: 380px;
-
 }
 
 .foto1 {
   width: 180px;
   transform: rotate(5deg);
 }
-
 
 .banner {
   width: 1600px;
@@ -107,58 +113,21 @@ img {
 @media (max-width: 720px) {
   .banner {
     width: 100vw;
-
   }
-
+}
+header {
+  background-color: rgba(0, 0, 0, 0.434);
 }
 
-html {
-  margin-top: 30px;
-}
-
-.caja {
-  /* 
-    border-color: red;
-    border-style: solid;
-    border-width: 3px;
-
-    tambien se puede top right bottom y left
-     */
-
-  border: solid 3px rgb(221, 17, 163);
-  color: rgb(193, 239, 41);
-
-  /* alto y ancho*/
-  /* ViewPort Width para el ancho */
-  /* ViewPort h para el alto hay que ponerlo en% */
-  width: 40%;
-  height: 20px;
-  margin: auto;
-  padding-top: 30px;
-  padding-bottom: 60px;
-  font-size: 1.2rem;
-  /* interesante para hacer una caja con scroll (exceso de contenido) */
-  overflow: auto;
-  /* para poner en linea algo que esta en bloque */
-  display: inline-block;
-}
-
-.Whatsapp {
-  position: fixed;
-
-  bottom: 4%;
-  right: 4%;
-
+footer {
+  background-color: rgba(0, 0, 0, 0.434);
 }
 
 .seccion {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-
-  grid-template-areas:
-    "articulo1 articulo2"
-    "articulo3 articulo4"
+  grid-template-areas: "articulo1 articulo2" "articulo3 articulo4";
 }
 
 .articulo1 {
@@ -177,14 +146,8 @@ html {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-
-    grid-template-areas:
-      "articulo1"
-      "articulo2"
-      "articulo3"
-      "articulo4"
+    grid-template-areas: "articulo1" "articulo2" "articulo3" "articulo4";
   }
-
   .articulo1 {
     display: flex;
     flex-direction: column;
@@ -192,7 +155,6 @@ html {
     width: 100vw;
   }
 }
-
 .articulo2 {
   grid-area: articulo2;
   display: flex;
@@ -212,7 +174,6 @@ html {
     width: 100vw;
   }
 }
-
 .articulo3 {
   grid-area: articulo3;
   display: flex;
@@ -232,7 +193,6 @@ html {
     width: 100vw;
   }
 }
-
 .articulo4 {
   grid-area: articulo4;
   display: flex;
@@ -244,7 +204,6 @@ html {
   padding: 160px;
 }
 
-
 @media (max-width: 720px) {
   .articulo4 {
     display: flex;
@@ -253,32 +212,37 @@ html {
     width: 100vw;
   }
 }
-
-.nav__flex li:hover {
-
-
-  font-size: 1.5rem;
-  border: solid 1.5px rgba(0, 0, 0, 0.859);
-  border-radius: 20px;
-  background-color: rgba(42, 204, 60, 0.766);
-  display: flex;
-  justify-content: center;
-
+form {
+  color: rgb(79, 21, 215);
+  background-color: rgba(25, 222, 143, 0.762);
+  font-size: 1rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-header {
-  background-color: rgba(0, 0, 0, 0.434);
+.caja {
+  /* 
+    border-color: red;
+    border-style: solid;
+    border-width: 3px;
 
+    tambien se puede top right bottom y left
+     */
+  border: solid 3px rgb(221, 17, 163);
+  color: rgb(193, 239, 41);
+  /* alto y ancho*/
+  /* ViewPort Width para el ancho */
+  /* ViewPort h para el alto hay que ponerlo en% */
+  width: 40%;
+  height: 20px;
+  margin: auto;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  font-size: 1.2rem;
+  /* interesante para hacer una caja con scroll (exceso de contenido) */
+  overflow: auto;
+  /* para poner en linea algo que esta en bloque */
+  display: inline-block;
 }
-
-@media (max-width:720px) {
-  .menu {
-    display: block;
-    text-align: center;
-  }
-}
-
-/* ----- Ofertas ------- */
 
 #ofertas div {
   padding: 80px;
@@ -290,16 +254,14 @@ header {
   text-align: center;
   color: rgba(15, 1, 13, 0.897);
   font-size: 3rem;
-  font-family: sans-serif, 'Times New Roman', Times, serif, Arial, Helvetica, sans-serif;
+  font-family: sans-serif, "Times New Roman", Times, serif, Arial, Helvetica, sans-serif;
 }
 
 .tarjeta-ofertas {
   border: solid 2.5px rgba(0, 0, 0, 0.859);
   width: 450px;
   padding: 20px;
-
   border-radius: 80px;
-
   display: flex;
   flex-direction: column;
   justify-content: left;
@@ -322,13 +284,10 @@ header {
 
 .tarjeta-ofertas a {
   border: 4px solid black;
-
   text-decoration: none;
   padding: 5px 10px;
-
   background-color: rgba(255, 242, 0, 0.648);
   color: black;
-
   border-radius: 80px;
 }
 
@@ -338,51 +297,45 @@ header {
 
 .contenedor-ofertas {
   display: flex;
-  justify-content: space-around;  
+  justify-content: space-around;
   flex-wrap: wrap;
   background-color: rgba(3, 4, 3, 0.886);
 }
 
-footer {
-
-  background-color: rgba(0, 0, 0, 0.434);
-}
-
-form {
-  color: rgb(79, 21, 215);
-  background-color: rgba(25, 222, 143, 0.762);
-  font-size: 1rem;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
+tablas {
+  color: white;
+  margin: auto;
 }
 
 .noti {
   height: 100px;
-      font-size: 3.5rem;
-      color: #1d17bbde;
-      border: solid 1.5px rgba(0, 0, 0, 0.859);
-      border-radius: 30px;
-      border-color: rgba(165, 22, 204, 0.855);
-  }
+  font-size: 3.5rem;
+  color: rgba(29, 23, 187, 0.8705882353);
+  border: solid 1.5px rgba(0, 0, 0, 0.859);
+  border-radius: 30px;
+  border-color: rgba(165, 22, 204, 0.855);
+}
 
-  .even {
-    height: 100px;
-      font-size: 3.5rem;
-      color: #1d17bbde;
-      border: solid 1.5px rgba(0, 0, 0, 0.859);
-      border-radius: 30px;
-      border-color: rgba(165, 22, 204, 0.855);
-  }
+.even {
+  height: 100px;
+  font-size: 3.5rem;
+  color: rgba(29, 23, 187, 0.8705882353);
+  border: solid 1.5px rgba(0, 0, 0, 0.859);
+  border-radius: 30px;
+  border-color: rgba(165, 22, 204, 0.855);
+}
 
-    .cla {
-      height: 100px;
-      font-size: 3.5rem;
-      color: #1d17bbde;
-      border: solid 1.5px rgba(0, 0, 0, 0.859);
-      border-radius: 30px;
-      border-color: rgba(165, 22, 204, 0.855);
-    }
+.cla {
+  height: 100px;
+  font-size: 3.5rem;
+  color: rgba(29, 23, 187, 0.8705882353);
+  border: solid 1.5px rgba(0, 0, 0, 0.859);
+  border-radius: 30px;
+  border-color: rgba(165, 22, 204, 0.855);
+}
 
-    .carousel-item {
-      width: 300px;
-    }
+.carousel-item {
+  width: 300px;
+}
+
+/*# sourceMappingURL=style.css.map */

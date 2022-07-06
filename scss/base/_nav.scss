@@ -1,0 +1,55 @@
+ul {
+    list-style-type: square;
+    text-align: center;
+    color: white;
+  }
+  
+  li {
+    list-style-type: square;
+    text-align: center;
+    color: white;
+    list-style: none;
+    font: bold 1.5rem verdana;
+  }
+   
+  
+  .menu li:hover { 
+    
+  
+    font-size: 1.3rem;
+    border: solid 1.5px rgba(0, 0, 0, 0.859);
+    border-radius: 20px;
+    border-color: rgb(207, 29, 169);
+    background-color: rgba(234, 205, 41, 0.766);
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+  }
+
+  .Whatsapp {
+    position: fixed;
+  
+    bottom: 4%;
+    right: 4%;
+    }
+
+    .nav__flex li:hover {
+
+
+        font-size: 1.5rem;
+        border: solid 1.5px rgba(0, 0, 0, 0.859);
+        border-radius: 20px;
+        background-color: rgba(42, 204, 60, 0.766);
+        display: flex;
+        justify-content: center;
+      
+      }
+      
+      
+      @media (max-width:720px) {
+        .menu {
+          display: block;
+          text-align: center;
+        }
+      }
+  
