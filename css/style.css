@@ -302,6 +302,31 @@ form {
   background-color: rgba(3, 4, 3, 0.886);
 }
 
+.boton, .botonverde, .botonnaranja {
+  background-color: violet;
+  text-align: center;
+  color: orange;
+  border-radius: 20px;
+  border: 1px solid red;
+}
+.boton:hover, .botonverde:hover, .botonnaranja:hover {
+  filter: opacity(85%);
+}
+
+.botonnaranja {
+  background-color: orange;
+  color: black;
+}
+
+.botonverde {
+  background-color: rgba(16, 81, 16, 0.873);
+  color: black;
+}
+
+.card-text {
+  color: black;
+}
+
 tablas {
   color: white;
   margin: auto;
