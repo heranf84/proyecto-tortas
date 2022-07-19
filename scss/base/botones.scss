@@ -1,0 +1,28 @@
+.boton {
+    background-color: violet;
+    text-align: center;
+    color: orange;
+    border-radius: 20px;
+    border: 1px solid red;
+    
+    &:hover{
+        filter: opacity(85%);
+    }
+}
+
+.botonnaranja{
+    @extend .boton;
+    background-color: orange;
+    color: black;
+
+}
+
+.botonverde{
+    @extend .boton;
+    background-color: rgba(16, 81, 16, 0.873);
+    color: black;
+
+}
+.card-text{
+    color: black;
+}
